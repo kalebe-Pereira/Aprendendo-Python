@@ -1,2 +1,2 @@
 # Aprendendo-Python
-Aprendendo python através do Curso em Vídeo
+Aprendendo python através do Lan Code
