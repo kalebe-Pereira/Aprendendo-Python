@@ -2,7 +2,8 @@
             
 # A lista é utilizada para armazenar vários valores em uma unica variável, ela pode ser iniciada com uma abertura de couchetes.
 
-lista = []
+lista = [] #Outra forma de iniciar é através do list: lista = list()
+
 
 # Você pode adicionar valores a lista em sua declaração. Ex.:
 frutas = ["maçã", "banana", "tomate" ]
