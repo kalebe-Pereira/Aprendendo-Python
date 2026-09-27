@@ -5,10 +5,10 @@
 
 # Se não, imprima: "Acesso negado para {nome}"
 
-usuario = dict()
-
-usuario['nome'] = input("Digite seu nome: ")
-usuario['idade']= int(input("Digite sua idade: "))
+usuario = {
+    'nome':input('Digite seu nome: '),
+    'idade': int(input('Digite sua idade: '))
+}
 
 if (usuario['idade'] >= 18):
     print(f"Acesso liberado para {usuario['nome']}")
