@@ -8,10 +8,10 @@ credenciais_corretas = {
     'usuario': 'kleber',
     'senha': '1234'
 }
-informacoes_inseridas = dict()
-
-informacoes_inseridas['usuario'] = input('Digite o usuário: ')
-informacoes_inseridas['senha'] = input('Digite a senha: ')
+informacoes_inseridas = {
+    'usuario':input('Digite o usuário: '),
+    'senha': input('Digite a senha: ')
+}
 
 if((informacoes_inseridas['usuario'] == credenciais_corretas['usuario']) and informacoes_inseridas['senha'] == credenciais_corretas['senha']):
     print("Login bem-sucedido")
