@@ -6,3 +6,10 @@ for i in range(5):
     numeros.append(int(input(f"Digite o {i + 1} número: ")))
 
 print(sum(numeros))
+
+# Outra forma de fazer: 
+
+# resultado = 0
+
+# for n in numeros:
+#     resultado += numeros
