@@ -13,27 +13,20 @@
 
 pizza = 0; hamburger = 0; opcao = 0
 
-while opcao != 3:
-    print("""
-          1. Pizza
-          
-          2. Hambúrger
-
-          3. Sair
-    """)
+while True:
+    print("1. Pizza\n2. Hamburger\n3. Sair\n")
     
     opcao = int(input("Digite sua opção: "))
 
-    if(opcao == 1):
-        pizza += 1
-    elif(opcao == 2):
-        hamburger += 1
+    match opcao:
+        case 1:
+            pizza+= 1
+        case 2:
+            hamburger+=1
+        case 3:
+            break
+        case _:
+            print("Opção Inválida!")
 
-print(f"""
-      Total de votos: 
-      
-      Habúrger: {hamburger}
-      
-      Pizza: {pizza}
-      
-""")
+
+print(f"\nTotal de votos:\n\nHabúrger: {hamburger}\nPizza: {pizza}")

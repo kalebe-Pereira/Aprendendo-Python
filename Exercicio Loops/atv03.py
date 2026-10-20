@@ -2,11 +2,15 @@
 
 # Quando o usuário digitar 0, o programa para e mostra o total economizado.
 
-digitado = 1
+
 cofrinho = list()
 
-while(digitado != 0):
+while True:
     cofrinho.append(float(input("Digite algum valor: ")))
+    
+    if cofrinho == 0:
+        break
+    
     digitado = cofrinho[-1]
     
 print(f"Valor economizado: R$ {sum(cofrinho)}")
