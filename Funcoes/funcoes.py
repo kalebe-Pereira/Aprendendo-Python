@@ -26,7 +26,41 @@ def saudacao(nome):
 
 saudacao("Kleber")
     
+# ----- PARÂMETROS OPCIONAIS -----
+
+    # Os parâmetros opcionais servem para caso não seja obrigatório passar outro valor para a função:
     
+    # Exemplo:
+    
+def saudacao(nome, parametro_opcional=0):
+    print(f"Oi, {nome}")
+    
+    if parametro_opcional != 0:
+        print("Caldo de cana")
+        
+    # Agora, ao passar somente o nome o programa executa normalmente. Mas, caso passe o segundo parâmetro será executado o restate do código.
+    
+saudacao("Kleber") # Normal.
+saudacao("Kleber", 1) # Paramêtro extra.
+
+# ----- EMPACOTAMENTO ----
+
+    # O empacotamento é a possibilidade de passar uma quantidade indetermidada de parâmetros, isso possibilita algumas coisas.
+    
+    # Exemplo:
+    
+def contador(*num): # É necessário passar o asterisco para funcionar.
+    for i in num:
+        print(i, end=' ')
+    print(f"Total {len(num)}")
+    # No *num, o parâmetro será tratado como uma tupla
+
+contador(1, 2, 3, 5)
+contador(5,6)
+contador(9, 8, 6, 5, 9, 8, 7)
+# Será executado normalmente.
+
+
 # As funções também pode ser utilizadas para problemas lógicos:
 
 def soma(n1, n2):
