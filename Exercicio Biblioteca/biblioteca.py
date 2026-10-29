@@ -10,10 +10,19 @@ math.sqrt(81)
 
 math.ceil(7.8) # Arredonda um valor.
 math.pi # Valor de pi
-math.factorial(4) # Retorna o fatorial do valor.
+math.factorial(4) # Retorna o fatorial do valor.S
 
 # Outra biblioteca muito usada é o random:
 
 import random
 
 random.randint(1, 10) # Retorna um valor inteiro aleatório entre os valores passados.
+
+# Para baixar biblioteca externa basta utilizar o pip install <nome_do_pacote>
+
+import pyfiglet
+
+texto = pyfiglet.figlet_format("Zilene")
+
+
+print(texto)
